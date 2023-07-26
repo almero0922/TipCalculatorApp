@@ -32,47 +32,46 @@
     <main class="wrapper">
       <div>
         <div class="bill-container">
-          <h4>Bill</h4>
+          <h4 class="margin-bottom">Bill</h4>
           <form action="" class="bill-form">
             <img src="./images/icon-dollar.svg" alt="">
-            <input type="text" class="bill-input"/>
+            <input type="text" class="bill-input" placeholder="0"/>
           </form>
         </div>
-        <div>
-          <h4></h4>
-          <div>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
-            <button></button>
+        <div class="button-matrix-wrapper">
+          <h4>Select Tip %</h4>
+          <div class="button-matrix">
+            <button>5%</button>
+            <button>10%</button>
+            <button>15%</button>
+            <button>25%</button>
+            <button>50%</button>
+            <input type="text" name="" id="" placeholder="Custom">
           </div>
         </div>
-        <div>
-          <h4></h4>
-          <form action="">
-            <input type="text">
+        <div class="">
+          <h4 class="margin-bottom">Number of People</h4>
+          <form action="" class="bill-form">
+            <img src="./images/icon-person.svg" alt="">
+            <input type="text" class="bill-input" placeholder="0">
           </form>
         </div>
-        <div>
-          <div>
-            <div>
-              <h4></h4>
-              <p></p>
+        <div class="total-wrapper">
+          <div class="result-display">
+            <div class="result-text">
+              <h4>Tip Amount</h4>
+              <p>/ person</p>
             </div>
-            <div>
-              <p><span></span></p>
+            <p id="result-0" class="result-number">$0.00</p>
+          </div>
+          <div class="result-display">
+            <div class="result-text">
+              <h4>Total</h4>
+              <p>/ person</p>
             </div>
+            <p id="result-1" class="result-number">$0.00</p>
           </div>
-          <div>
-            <h4></h4>
-            <p></p>
-          </div>
-          <div>
-            <p><span></span></p>
-          </div>
-          <button></button>
+          <button>RESET</button>
         </div>
       </div>
     </main>

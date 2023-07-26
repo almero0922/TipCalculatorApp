@@ -8,6 +8,7 @@
 --LightGrayishCyan: hsl(185, 41%, 84%);
 --VeryLightGrayishCyan: hsl(189, 41%, 97%);
 --White: hsl(0, 0%, 100%);
+--LightGrayishCyanHover: hsl(185, 41%, 78%);
 }
 *{
     margin: 0;
@@ -24,7 +25,6 @@ body{
     background-color: var(--LightGrayishCyan)
 }
 .app-title{
-    color: var(--DarkGrayishCyan);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -34,6 +34,9 @@ body{
     line-height: 1.4;
     margin: 2rem 0;
 }
+.app-title p{
+    color: var(--DarkGrayishCyan);
+}
 .wrapper{
     background-color: white;
     width: 374px;
@@ -41,7 +44,7 @@ body{
     border-radius: 14px 14px 0 0;
     padding: 1.8rem;
 }
-.bill-container h4{
+.margin-bottom{
     margin-bottom: 0.4rem;
 }
 .bill-form{
@@ -51,6 +54,7 @@ body{
     background-color: var(--VeryLightGrayishCyan);
     align-items: center;
     border-radius: 10px;
+    margin-bottom: 2.4rem;
 }
 .bill-form img{
     height: 18px;
@@ -66,3 +70,77 @@ body{
     background-color: inherit;
     color: var(--VeryDarkCyan);
 }
+.button-matrix-wrapper{
+    margin-bottom: 2.4rem;
+    width: 100%;
+}
+.button-matrix-wrapper h4{
+    margin-bottom: 0.8rem;
+}
+.button-matrix{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 1rem 1rem;
+}
+.button-matrix button{
+    height: 3rem;
+    width: 100%;
+    font-size: 24px;
+    color: white;
+    background-color: var(--VeryDarkCyan);
+    border: none;
+    border-radius: 8px;
+}
+.button-matrix button:hover{
+    background-color: var(--StrongCyan);
+    cursor: pointer;
+}
+.button-matrix input{
+    width: 100%;
+    background-color: var(--VeryLightGrayishCyan);
+    text-align: right;
+    border: none;
+    font-size: 24px;
+    padding: 0.4rem 0.8rem;
+    color: var(--VeryDarkCyan);
+    border-radius: 8px;
+}
+.button-matrix input:focus{
+    outline: 2px solid var(--StrongCyan);
+}
+.total-wrapper{
+    background-color: var(--VeryDarkCyan);
+    border-radius: 14px;
+    padding: 1.8rem;
+    display: grid;
+    grid-template-rows: repeat(2, 1fr) 48px;
+    grid-gap: 2.4rem;
+}
+.result-display{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.result-text h4{
+    color: white;
+}
+.result-text p{
+    font-size: 12px;
+}
+.result-number{
+    color: var(--StrongCyan);
+    font-size: 24px;
+}
+.total-wrapper button{
+    border: none;
+    background-color: var(--StrongCyan);
+    color: var(--VeryDarkCyan);
+    font-size: 20px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.total-wrapper button:hover{
+    background-color: var(--LightGrayishCyan);
+}
+
