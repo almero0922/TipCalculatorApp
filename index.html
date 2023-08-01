@@ -11,9 +11,12 @@
       sizes="32x32"
       href="./images/favicon-32x32.png"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap"
+      rel="stylesheet"
+    />
     <title>Frontend Mentor | Tip calculator app</title>
     <link rel="stylesheet" href="style.css" />
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -28,32 +31,51 @@
     </style>
   </head>
   <body>
-    <div class="app-title"><p>SPLI</p><p>TTER</p></div>
+    <div class="app-title">
+      <p>SPLI</p>
+      <p>TTER</p>
+    </div>
     <main class="wrapper">
       <div>
         <div class="bill-container">
-          <h4 class="margin-bottom">Bill</h4>
-          <form action="" class="bill-form">
-            <img src="./images/icon-dollar.svg" alt="">
-            <input type="text" class="bill-input" placeholder="0"/>
+          <div class="input-people-container margin-bottom">
+            <h4>Bill</h4>
+            <span id="bill-error" class="display-none">Must be numbers</span>
+          </div>
+          <form action="" class="bill-form" id="billForm">
+            <span class="img-bill"></span>
+            <input
+              id="billInput"
+              type="text"
+              class="bill-input"
+              placeholder="0"
+            />
           </form>
         </div>
         <div class="button-matrix-wrapper">
           <h4>Select Tip %</h4>
-          <div class="button-matrix">
-            <button>5%</button>
-            <button>10%</button>
-            <button>15%</button>
-            <button>25%</button>
-            <button>50%</button>
-            <input type="text" name="" id="" placeholder="Custom">
-          </div>
+          <form action="" class="button-matrix" id="buttonForm">
+            <input type="button" class="button-ca" value="5%" placeholder="%"/>
+            <input type="button" class="button-ca" value="10%" placeholder="10%"/>
+            <input type="button" class="button-ca" value="15%" placeholder="15%"/>
+            <input type="button" class="button-ca" value="25%" placeholder="25%"/>
+            <input type="button" class="button-ca" value="50%" placeholder="50%"/>
+            <input type="text" name="" id="button-cu-ca" placeholder="Custom" class="button-cu-ca"/>
+          </form>
         </div>
         <div class="">
-          <h4 class="margin-bottom">Number of People</h4>
+          <div class="input-people-container margin-bottom">
+            <h4>Number of People</h4>
+            <span class="display-none">Can't be zero</span>
+          </div>
           <form action="" class="bill-form">
-            <img src="./images/icon-person.svg" alt="">
-            <input type="text" class="bill-input" placeholder="0">
+            <span class="img-person"></span>
+            <input
+              id="peopleInput"
+              type="text"
+              class="bill-input"
+              placeholder="0"
+            />
           </form>
         </div>
         <div class="total-wrapper">
@@ -75,5 +97,6 @@
         </div>
       </div>
     </main>
+    <script src="./script.js"></script>
   </body>
 </html>

@@ -48,27 +48,38 @@ body{
     margin-bottom: 0.4rem;
 }
 .bill-form{
-    display: flex;
-    justify-content: space-between;
-    padding: 0.4rem 0.8rem;
-    background-color: var(--VeryLightGrayishCyan);
-    align-items: center;
-    border-radius: 10px;
-    margin-bottom: 2.4rem;
+    position: relative;
+    margin-bottom: 1.8rem;
 }
-.bill-form img{
+.bill-form span{
     height: 18px;
     object-fit: contain;
+    display: block;
+    height: 18px;
+    width: 18px;
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 1rem;
+    left: 0.8rem;
+}
+.img-bill{
+    background-image: url('./images/icon-dollar.svg');
+}
+.img-person{
+    background-image: url('./images/icon-person.svg');
 }
 .bill-input{
-    border: none;
     width: 100%;
-    height: 100%;
-    outline: none;
+    background-color: var(--VeryLightGrayishCyan);
     text-align: right;
+    border: none;
     font-size: 24px;
-    background-color: inherit;
+    padding: 0.4rem 0.8rem;
     color: var(--VeryDarkCyan);
+    border-radius: 8px;
+}
+.bill-input:focus{
+    outline: 2px solid var(--StrongCyan);
 }
 .button-matrix-wrapper{
     margin-bottom: 2.4rem;
@@ -83,7 +94,7 @@ body{
     grid-template-rows: repeat(3, 1fr);
     grid-gap: 1rem 1rem;
 }
-.button-matrix button{
+.button-ca{
     height: 3rem;
     width: 100%;
     font-size: 24px;
@@ -92,11 +103,11 @@ body{
     border: none;
     border-radius: 8px;
 }
-.button-matrix button:hover{
+.button-ca:hover{
     background-color: var(--StrongCyan);
     cursor: pointer;
 }
-.button-matrix input{
+.button-cu-ca{
     width: 100%;
     background-color: var(--VeryLightGrayishCyan);
     text-align: right;
@@ -106,8 +117,16 @@ body{
     color: var(--VeryDarkCyan);
     border-radius: 8px;
 }
-.button-matrix input:focus{
+.button-cu-ca:focus{
     outline: 2px solid var(--StrongCyan);
+}
+.input-people-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input-people-container span{
+    color: hsl(0, 100%, 80%);
 }
 .total-wrapper{
     background-color: var(--VeryDarkCyan);
@@ -143,4 +162,6 @@ body{
 .total-wrapper button:hover{
     background-color: var(--LightGrayishCyan);
 }
-
+.display-none{
+    display: none;
+}
