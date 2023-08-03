@@ -165,3 +165,6 @@ body{
 .display-none{
     display: none;
 }
+.button-clicked{
+    background-color: var(--StrongCyan);
+}
