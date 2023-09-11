@@ -132,20 +132,22 @@ body{
     background-color: var(--VeryDarkCyan);
     border-radius: 14px;
     padding: 1.8rem;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr) 48px;
-    grid-gap: 2.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
 }
 .result-display{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 1.8rem;
 }
 .result-text h4{
     color: white;
 }
 .result-text p{
-    font-size: 12px;
+    font-size: 14px;
 }
 .result-number{
     color: var(--StrongCyan);
@@ -158,6 +160,8 @@ body{
     font-size: 20px;
     border-radius: 8px;
     cursor: pointer;
+    width: 100%;
+    height: 40px;
 }
 .total-wrapper button:hover{
     background-color: var(--LightGrayishCyan);
@@ -167,4 +171,35 @@ body{
 }
 .button-clicked{
     background-color: var(--StrongCyan);
+}
+@media (min-width: 1440px){
+    .wrapper{
+        width: 860px;
+    }
+    .app-container{
+        display: flex;
+        flex-direction: row;
+        gap: 2rem;
+        height: auto;
+    }
+    .ca-container{
+        width: 50%;
+    }
+    .total-wrapper{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        height: 440px;
+        justify-content: space-between;
+    }
+    .result-display{
+        margin-bottom: 2rem;
+    }
+    #reset-ca{ 
+        width: 100%;
+        height: 40px;
+        bottom: 0;
+        display: block;
+        align-self: flex-end;
+    }
 }

@@ -36,64 +36,104 @@
       <p>TTER</p>
     </div>
     <main class="wrapper">
-      <div>
-        <div class="bill-container">
-          <div class="input-people-container margin-bottom">
-            <h4>Bill</h4>
-            <span id="bill-error" class="display-none">Must be numbers</span>
+      <div class="app-container">
+        <div class="ca-container">
+          <div class="bill-container">
+            <div class="input-people-container margin-bottom">
+              <h4>Bill</h4>
+              <span id="bill-error" class="display-none">Must be numbers</span>
+            </div>
+            <form action="" class="bill-form" id="billForm">
+              <span class="img-bill"></span>
+              <input
+                id="billInput"
+                type="text"
+                class="bill-input"
+                placeholder="0"
+              />
+            </form>
           </div>
-          <form action="" class="bill-form" id="billForm">
-            <span class="img-bill"></span>
-            <input
-              id="billInput"
-              type="text"
-              class="bill-input"
-              placeholder="0"
-            />
-          </form>
-        </div>
-        <div class="button-matrix-wrapper">
-          <h4>Select Tip %</h4>
-          <form action="" class="button-matrix" id="buttonForm">
-            <input type="button" class="button-ca" value="5%" placeholder="5%" id="0.05"/>
-            <input type="button" class="button-ca" value="10%" placeholder="10%" id="0.1"/>
-            <input type="button" class="button-ca" value="15%" placeholder="15%" id="0.15"/>
-            <input type="button" class="button-ca" value="25%" placeholder="25%" id="0.25"/>
-            <input type="button" class="button-ca" value="50%" placeholder="50%" id="0.50"/>
-            <input type="text" name="" id="custom%" placeholder="Custom" class="button-cu-ca"/>
-          </form>
-        </div>
-        <div class="">
-          <div class="input-people-container margin-bottom">
-            <h4>Number of People</h4>
-            <span class="display-none" id="people-error">Can't be zero</span>
+          <div class="button-matrix-wrapper">
+            <h4>Select Tip %</h4>
+            <form action="" class="button-matrix" id="buttonForm">
+              <input
+                type="button"
+                class="button-ca"
+                value="5%"
+                placeholder="5%"
+                id="0.05"
+              />
+              <input
+                type="button"
+                class="button-ca"
+                value="10%"
+                placeholder="10%"
+                id="0.1"
+              />
+              <input
+                type="button"
+                class="button-ca"
+                value="15%"
+                placeholder="15%"
+                id="0.15"
+              />
+              <input
+                type="button"
+                class="button-ca"
+                value="25%"
+                placeholder="25%"
+                id="0.25"
+              />
+              <input
+                type="button"
+                class="button-ca"
+                value="50%"
+                placeholder="50%"
+                id="0.50"
+              />
+              <input
+                type="text"
+                name=""
+                id="custom%"
+                placeholder="Custom"
+                class="button-cu-ca"
+              />
+            </form>
           </div>
-          <form action="" class="bill-form" id="peopleForm">
-            <span class="img-person"></span>
-            <input
-              id="peopleInput"
-              type="text"
-              class="bill-input"
-              placeholder="0"
-            />
-          </form>
+          <div class="">
+            <div class="input-people-container margin-bottom">
+              <h4>Number of People</h4>
+              <span class="display-none" id="people-error">Can't be zero</span>
+            </div>
+            <form action="" class="bill-form" id="peopleForm">
+              <span class="img-person"></span>
+              <input
+                id="peopleInput"
+                type="text"
+                class="bill-input"
+                placeholder="0"
+              />
+            </form>
+          </div>
         </div>
         <div class="total-wrapper">
-          <div class="result-display">
-            <div class="result-text">
-              <h4>Tip Amount</h4>
-              <p>/ person</p>
+          <div>
+            <div class="result-display">
+              <div class="result-text">
+                <h4>Tip Amount</h4>
+                <p>/ person</p>
+              </div>
+              <p id="result-0" class="result-number">$0.00</p>
             </div>
-            <p id="result-0" class="result-number">$0.00</p>
-          </div>
-          <div class="result-display">
-            <div class="result-text">
-              <h4>Total</h4>
-              <p>/ person</p>
+            <div class="result-display">
+              <div class="result-text">
+                <h4>Total</h4>
+                <p>/ person</p>
+              </div>
+              <p id="result-1" class="result-number">$0.00</p>
             </div>
-            <p id="result-1" class="result-number">$0.00</p>
           </div>
-          <button>RESET</button>
+          <div><button id="reset-ca">RESET</button></div>
         </div>
       </div>
     </main>
